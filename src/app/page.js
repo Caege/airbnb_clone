@@ -3,6 +3,8 @@ import getListings from "./actions/getListings";
 import Container from "@/components/Container";
 import ListingCard from "@/components/listings/ListingCard";
 import getCurrentUser from "./actions/getCurrentUser";
+
+export const dynamic = "force-dynamic";
 export default async function Home({ searchParams }) {
 	const listings = await getListings(searchParams);
 	const currentUser = await getCurrentUser();
