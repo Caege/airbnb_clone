@@ -78,7 +78,7 @@ if(dateRange.startDate && dateRange.endDate) {
 }, [ dateRange,listing.price])
 
 	return (
-		<Container>
+		
 			<div className=" max-w-screen-lg mx-auto pt-[90px]">
 				<div className=" flex flex-col gap-6">
 					<ListingHead
@@ -112,7 +112,7 @@ if(dateRange.startDate && dateRange.endDate) {
 					</div>
 				</div>
 			</div>
-		</Container>
+		
 	);
 }
 

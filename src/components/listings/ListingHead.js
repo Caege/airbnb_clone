@@ -12,14 +12,21 @@ function ListingHead({title, imageSrc, locationValue, id, currentUser}) {
 				title={title}
 				subtitle={`${location?.region}, ${location?.label}`}
 			/>
-      <div className=' w-full 
-      h-[30vh]
-      md:h-[60vh] overflow-hidden rounded-xl relative'>
-        <Image src= {imageSrc} fill className=" object-cover w-full" alt='Iamge'/>
-        <div className=' absolute top-5 right-5'>
-          <HeartButton listingId={id} currentUser={currentUser}/>
-        </div>
-      </div>
+			<div
+				className=" w-full
+      h-[30vh] 
+      md:h-[50vh] overflow-hidden rounded-xl relative border p-4"
+			>
+				<Image
+					src={imageSrc}
+					fill
+					className="object-cover md:object-contain w-full  md:p-2"
+					alt="Iamge"
+				/>
+				<div className=" absolute top-5 right-5">
+					<HeartButton listingId={id} currentUser={currentUser} />
+				</div>
+			</div>
 		</>
 	);
 }
