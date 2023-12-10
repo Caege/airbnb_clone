@@ -53,7 +53,7 @@ function Search() {
 			onClick={searchModal.onOpen}
 		>
 			<div className=" flex flex-row items-center justify-between ">
-				<div className="md:px-6 pl-[10px] pr-[24px]"> {locationLabel}</div>
+				<div className="md:px-6 pl-[10px] pr-[0px] shrink"> {locationLabel}</div>
 				<div className=" border-x-[1px]  text-center px-6 sm:block text-sm hidden ">
 					{durationLabel}
 				</div>
@@ -62,7 +62,7 @@ function Search() {
             pr-2  "
 				>
 					<div className="hidden sm:block">{guestLabel}</div>
-					<div className=" bg-rose-500 rounded-full text-white p-2">
+					<div className=" bg-rose-500 rounded-full text-white p-2 shrink-0">
 						<BiSearch size={18} />
 					</div>
 				</div>

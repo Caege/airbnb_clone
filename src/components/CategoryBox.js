@@ -32,7 +32,7 @@ router.push(url)
 			className={`flex flex-col items-center justify-center gap-2 p-2 md:p-3 border-b-2 hover:text-neutral-800 transition ${selected ? "border-b-neutral-800 text-neutral-800" : " border-transparent text-neutral-500"}`}
             onClick={handleClick}
 		>
-			<Icon size={24}/>
+			<Icon size={20}/>
            <div className=' font-medium text-sm'>{label}</div>
 		</div>
 	);
