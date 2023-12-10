@@ -14,13 +14,13 @@ function ListingHead({title, imageSrc, locationValue, id, currentUser}) {
 			/>
 			<div
 				className=" w-full
-      h-[30vh] 
+      h-[30vh]
       md:h-[50vh] overflow-hidden rounded-xl relative border p-4"
 			>
 				<Image
 					src={imageSrc}
 					fill
-					className="object-cover md:object-contain w-full  md:p-2"
+					className="object-cover md:object-contain w-full  md:p-2 "
 					alt="Iamge"
 				/>
 				<div className=" absolute top-5 right-5">
