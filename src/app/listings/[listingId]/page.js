@@ -19,9 +19,9 @@ const reservations = await getReservation(params)
 	}
 
   return (
-    <Container>
+   
       <ListingClient listing = {listing} currentUser = {currentUser} reservation={reservations}/>
-    </Container>
+   
   )
 }
 

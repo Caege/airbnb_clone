@@ -110,7 +110,7 @@ function Categories() {
 	}
 
 	return (
-		<div className=" flex flex-row items-center justify-between md:pt-3  overflow-x-auto">
+		<div className=" flex flex-row items-center justify-between  overflow-x-auto overflow-y-hidden">
 			{categories.map((item, i) => {
 				return (
 					<CategoryBox
