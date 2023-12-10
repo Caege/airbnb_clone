@@ -79,7 +79,7 @@ if(dateRange.startDate && dateRange.endDate) {
 
 	return (
 		<Container>
-			<div className=" max-w-screen-lg mx-auto pt-[40px]">
+			<div className=" max-w-screen-lg mx-auto pt-[90px]">
 				<div className=" flex flex-col gap-6">
 					<ListingHead
 						title={listing.title}
