@@ -10,7 +10,7 @@ function Navbar({ currentUser }) {
 	
 	return (
 		<div className=" w-full fixed border-b-2 z-10 bg-white">
-			<div className=" py-6 mx-auto   max-w-[1500px] z-10">
+			<div className=" md:py-3 py-2 pb-3 mx-auto   max-w-[1500px] z-10">
 				<Container>
 					<div className="flex flex-row justify-between items-center gap-3 ">
 						<Logo />
