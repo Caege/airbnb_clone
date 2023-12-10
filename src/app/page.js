@@ -17,7 +17,7 @@ export default async function Home({ searchParams }) {
 	return (
 		<Container>
 			<div
-				className=" pt-36 grid grid-cols-1    sm:grid-cols-2  md:grid-cols-3 gap-8  lg:grid-cols-4
+				className=" md:pt-[185px] pt-[168px] grid grid-cols-1    sm:grid-cols-2  md:grid-cols-3 gap-8  lg:grid-cols-4
             xl:grid-cols-5
             2xl:grid-cols-6
             "

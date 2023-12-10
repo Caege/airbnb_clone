@@ -10,6 +10,7 @@ import LoginModal from "@/components/modals/LoginModal";
 import getCurrentUser from "./actions/getCurrentUser";
 import RentModal from "@/components/modals/RentModal";
 import SearchModal from "@/components/modals/SearchModal";
+import Container from "@/components/Container";
 Navbar;
 export const metadata = {
 	title: "Airbnb Clone",
@@ -32,7 +33,10 @@ export default async function RootLayout({ children }) {
 				<ToastProvider />
 				<RentModal />
 				<Navbar currentUser={currentUser} />
-				<div className="  pt-20">{children}</div>
+				<Container>
+
+				<div className=" ">{children}</div>
+				</Container>
 			</body>
 		</html>
 	);
