@@ -1,0 +1,34 @@
+import useCountries from '@/hooks/useCountries'
+import React from 'react'
+import Heading from '../Heading';
+import Image from 'next/image';
+import HeartButton from '../HeartButton';
+function ListingHead({title, imageSrc, locationValue, id, currentUser}) {
+  const { getByValue} = useCountries();
+  const location = getByValue(locationValue)
+  return (
+		<>
+			<Heading
+				title={title}
+				subtitle={`${location?.region}, ${location?.label}`}
+			/>
+			<div
+				className=" w-full
+      h-[30vh]
+      md:h-[50vh] overflow-hidden rounded-xl relative border p-4"
+			>
+				<Image
+					src={imageSrc}
+					fill
+					className="object-cover md:object-contain w-full  md:p-2 "
+					alt="Iamge"
+				/>
+				<div className=" absolute top-5 right-5">
+					<HeartButton listingId={id} currentUser={currentUser} />
+				</div>
+			</div>
+		</>
+	);
+}
+
+export default ListingHead
